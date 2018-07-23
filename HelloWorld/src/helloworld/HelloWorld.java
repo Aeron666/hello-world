@@ -21,11 +21,30 @@ public class HelloWorld {
         System.out.println("Hello World");
         int a=sc.nextInt();
         int b=sc.nextInt();
-        System.out.println(a*b);
-        System.out.println(a+b);
-        System.out.println(a-b);
-        System.out.println(a*a/b);
-        System.out.println(a%b);
+        System.out.println("Enter any operation to be performed:");
+        char op=sc.next().charAt(0);
+        double calc;
+        switch(op){
+            case '+':
+                calc=a+b;
+                break;
+            case '-':
+                calc=a-b;
+                break;
+            case '*':
+                calc=a*b;
+                break;
+            case '/':
+                calc=a/b;
+                break;
+            case '%':
+                calc=a%b;
+                break;
+            default:
+                System.out.println("Operator entered is invalid");
+                return;
+        }
+        System.out.println(calc);
     }
     
 }
