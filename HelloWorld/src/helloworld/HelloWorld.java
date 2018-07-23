@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package helloworld;
+import java.util.Scanner;
 
 /**
  *
@@ -16,7 +17,15 @@ public class HelloWorld {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner sc=new Scanner(System.in);
         System.out.println("Hello World");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println(a*b);
+        System.out.println(a+b);
+        System.out.println(a-b);
+        System.out.println(a*a/b);
+        System.out.println(a%b);
     }
     
 }
